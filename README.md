@@ -16,7 +16,7 @@ BACK UP YOUR DATA FILE BEFORE YOU DO ANYTHING!
 
 5- Uncomment the mysql-8.0 (Line 12, delete # sign)
 
-6- Edit the mysql version to current version. (Change mysql-8.0.13-winx64.zip TO mysql-8.0.20-winx64.zip )
+6- Edit the mysql version to current version. (Change mysql-8.0.13-winx64.zip TO mysql-8.0.25-winx64.zip )
 
 7- Save & Close file
 
