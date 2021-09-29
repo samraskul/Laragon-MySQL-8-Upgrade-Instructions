@@ -38,3 +38,39 @@ BACK UP YOUR DATA FILE BEFORE YOU DO ANYTHING!
 
 16- ALL DONE!
 
+
+#upgrade to mysql 8 second way:
+
+I would like to share My solution for this I used 64bit version and its in my PC "D" drive with no mysql root password
+
+1.Install c++ redistribution package from Microsoft site "VC_redist.x64.exe"
+
+1- Download mysql8.0.x-winx64.zip archive
+
+2- Extract to "D:\laragon\bin\mysql" directory change drive letter accordingly
+
+3- Stop laragon and and select mysql8.0-winx64 version from Laragon Menu ->version->mysql-8.0.x-win64
+
+4- Now start the Service wait for few seconds to allow initialization
+
+5- Stop mysql server go to directory "D:\laragon\bin\mysql\mysql-8.0.x-winx64\bin" run "mysqld stop" this will stop sql
+
+6- Go to "D:\laragon\data" rename existing "mysql-8" folder to mysql.bk and rename "mysql" folder to mysql-8
+
+7- Stop Laragon and restart it again
+
+if you're still getting an error continue. other wise it's finish. :)
+
+8- open cmd.exe as Administrator
+
+9- go to directory "D:\laragon\bin\mysql\mysql-8.0.x-winx64" run "mysql_upgrade.exe -u root -p" I didnt have password so i left it blank after -p
+
+Click Enter without password when prompted Wait for Few minutes to allow mysql do the upgrade
+
+10- now go to mysql terminal from Laragon enter comand "mysql -u root -p" Click Enter without password
+
+11- Now enter the following comand "ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';" replace NewPassword with your own one
+
+12- Now Restart Laragon again
+
+
