@@ -39,7 +39,8 @@ BACK UP YOUR DATA FILE BEFORE YOU DO ANYTHING!
 16- ALL DONE!
 
 
-#upgrade to mysql 8 second way:
+# upgrade-to-mysql-8-second-way
+upgrade to mysql 8 second way
 
 I would like to share My solution for this I used 64bit version and its in my PC "D" drive with no mysql root password
 
